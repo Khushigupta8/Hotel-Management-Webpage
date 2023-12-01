@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadway Inn</title>
+    
+
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 0; 
+            color: #262223; 
+        }
+        .photo-gallery {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .slider {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        body {
+            background-color: white;
+            color: #000;
+            font-family: emoji;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: rgba(244, 240, 241, 0.8);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+          
+        }
+
+        h2 hotel-booking {
+            text-align: center;
+            margin-bottom: 2px;
+            color: purple;
+            text-align: center;
+        }
+
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.5em;
+        }
+
+        .bedroom-image {
+            width: 60%;
+            height: 60vh;
+            border-radius: 90px;
+            display: block;
+            margin: 0 auto; 
+        }
+.hotel-images{
+    width:100%
+    
+}
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            width: 60%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 60%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .hotel-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .hotel-images img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .services {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            color: black;
+        }
+
+        .service-item {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service-icon {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .ratings {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .covid-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .hotel-rules {
+            margin-top: 20px;
+        }
+
+        .payment-modes {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .payment-modes img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .helpline {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        
+        .highlight {
+            color: #ff5e6c;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #27ae60;
+        }
+
+        .interactive-icon {
+            font-size: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .interactive-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .unique-element {
+            background-color: rgb(29, 16, 27);
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons span {
+            font-size: 30px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons span:hover {
+            transform: scale(1.2);
+        }
+        .address-section {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: italic;
+            color: #3b5998;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="photo-gallery">
+           
+            <div class="slider">
+                <div><img src="https://source.unsplash.com/800x600/?hotel" alt="Hotel 1"></div>
+                <div><img src="https://source.unsplash.com/800x600/?accommodation" alt="Hotel 2"></div>
+                <div><img src="https://source.unsplash.com/800x600/?travel" alt="Hotel 3"></div>
+                
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script> $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true, 
+            autoplaySpeed: 300 
+        });
+    </script></script>
+        <img class="bedroom-image" src="https://source.unsplash.com/600x400/?hotel" alt="Broadway in">
+
+        <h1>Broadway Inn</h1>
+        <h2 hotel-booking>Hotel Booking Page</h2>
+        <div class="welcome-message">
+            <p>Welcome to Broadway Inn! Experience comfort and luxury during your stay.</p>
+        </div>
+
+        <form action="/your_booking_script" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin">
+            
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout">
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type">
+               
+                <option value="standard">Standard Room - Rs 1000/day</option>
+                <option value="deluxe">Deluxe Room - Rs 1500/day</option>
+                <option value="suite">Suite - Rs 2000/day</option>
+            </select>
+            <div class="available-rooms">
+    <h2>Available Rooms</h2>
+
+    <div class="room-type">
+        <h3>Standard Room</h3>
+        <p>Number of available rooms: 18</p>
+        <button onclick="bookRoom('standard')">Book Now</button>
+    </div>
+
+    <div class="room-type">
+        <h3>Deluxe Room</h3>
+        <p>Number of available rooms: 50</p>
+        <button onclick="bookRoom('deluxe')">Book Now</button>
+    </div>
+
+    <div class="room-type">
+        <h3>Suite</h3>
+        <p>Number of available rooms: 30</p>
+        <button onclick="bookRoom('suite')">Book Now</button>
+    </div>
+</div>
+<script>
+    function bookRoom(roomType) {
+     
+        alert(`Booking ${roomType} room. Redirecting to booking page...`);
+    }
+</script>
+
+            <label for="special-requests">Special Requests:</label>
+            <textarea id="special-requests" name="special-requests" rows="7" cols="50"></textarea>
+            <div>
+                <img src="https://source.unsplash.com/200x200/?pool" alt="Hotel 4">
+                <img src="https://source.unsplash.com/200x200/?lobby" alt="Hotel 5">
+                <img src="https://source.unsplash.com/200x200/?travel" alt="Hotel 6">
+            </div>
+
+            <h2>Payment Details</h2>
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="**** **** **** ****">
+
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+             
+        
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="***">
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <div class="hotel-images">
+            <img src="https://source.unsplash.com/200x200/?ambience" alt="Hotel 1">
+            <img src="https://source.unsplash.com/200x200/?food" alt="Hotel 5">
+            <img src="https://source.unsplash.com/200x200/?washroom" alt="Hotel 4">
+            <img src="https://source.unsplash.com/200x200/?bedroom" alt="Hotel 6">
+            <img src="https://source.unsplash.com/200x200/?accommodation" alt="Hotel 2">
+            <img src="https://source.unsplash.com/200x200/?travel" alt="Hotel 3">
+        </div>
+        <div class="services">
+            <div class="service-item">
+                <span class="service-icon">🛌</span>
+                <p>Private Bedroom</p>
+            </div>
+            <div class="service-item">
+                <span class="service-icon">📶</span>
+                <p>Free Wi-Fi</p>
+            </div>
+            <div class="service-item">
+                <span class="service-icon">👨‍👩‍👧‍👦</span>
+                <p>Family Room</p>
+            </div>
+            <div class="service-item">
+                <span class="service-icon">🚿</span>
+                <p>Shower</p>
+            </div>
+
+            <div class="service-item">
+                <span class="service-icon">🚭</span>
+                <p>Non-Smoking Areas</p>
+            </div>
+            <div class="service-item">
+                <span class="service-icon">📺</span>
+                <p>Cable Channels</p>
+            </div>
+        </div>
+
+        
+        <div class="ratings">
+            <p>Guest Ratings: ⭐⭐⭐⭐⭐</p>
+        </div>
+
+       
+        <div class="covid-info">
+            <p>For your safety, we follow strict COVID-19 guidelines. Learn more about our safety measures <a
+                    href="#">here</a>.</p>
+        </div>
+        
+        <div class="hotel-rules">
+            <h2>Hotel Rules</h2>
+            <ul>
+                <li>Check-in time: 3:00 PM</li>
+                <li>Check-out time: 12:00 PM</li>
+                <li>No pets allowed</li>
+                <li>Smoking is prohibited in rooms and common areas</li>
+                <li>Quiet hours: 10:00 PM - 7:00 AM</li>
+            </ul>
+        </div>
+
+        
+        <div class="payment-modes">
+           
+        </div>
+
+        <div class="unique-element">
+            <h3 class="highlight">Discover Our Exclusive Offer!</h3>
+            <p>Book now and get a <span class="highlight">10% discount</span> on your stay. Limited time offer!</p>
+            <button class="cta-button">Claim Discount</button>
+        </div>
+
+        <div class="social-icons">
+            <p>Follow us for updates:</p>
+            <span class="interactive-icon">&#x1F4F1;</span>
+            <span class="interactive-icon">&#x1F30D;</span>
+            <h3>What Our Guests Say</h3>
+            <blockquote>
+                "A truly wonderful experience! Broadway Inn exceeded all my expectations. I can't wait to come back!"
+            </blockquote>
+            <p>- Happy Guests</p>
+        </div>
+        <div class="customer-reviews">
+            <h2>Customer Reviews</h2>
+           
+            <div class="customer-review">
+                <p class="customer-name">John Doe</p>
+                <p>"A wonderful experience at Broadway Inn! The staff was friendly, and the rooms were comfortable. I'll definitely come back."</p>
+            </div>
+            
+            <div class="customer-review">
+                <p class="customer-name">Jane Smith</p>
+                <p>"Great location, excellent service, and the amenities were top-notch. Highly recommended!"</p>
+            </div>
+           
+        </div>
+
+      
+
+    </div>
+
+        <div class="address"> 
+            <p>123 Luxury Street, Cityvilla</p>
+            <p>Pin Code: 250002</p>
+            <p>Contact: +91 9955663780</p>
+            <p>For assistance, call our helpline: <strong>+1201 25006790</strong></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
