@@ -20,6 +20,6 @@ This project was created when I was just starting to learn web development. The 
 
 ## Usage
 
-Explore the project by visiting the hosted site on GitHub Pages:
+Explore the project by visiting the hosted site on GitHub Pages: https://khushigupta8.github.io/Hotel-Management-Webpage/
 
 Alternatively, you can also clone the repository to use it.
